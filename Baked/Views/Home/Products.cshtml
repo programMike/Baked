@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Baked.Models.Product>
+
+@*ITC172 Final Project requirement:
+There should be a page that shows the bakery products.*@
+
+@{
+    ViewBag.Title = "Baked @ Products";
+}
+
+<h2>Products & Price Listing: </h2>
+<h2>@ViewBag.Message</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </th>
+    </tr>
+    
+@foreach (var currentDataObj in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => currentDataObj.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => currentDataObj.ProductPrice)
+        </td>
+    </tr>
+}
+</table>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c5d0ba3cadde4a3e80f1fe023ab1e780" Name="Diagram1">
+        <EntityTypeShape EntityType="BakeryModel.Employee" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BakeryModel.Person" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BakeryModel.Product" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BakeryModel.Sale" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BakeryModel.SaleDetail" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="BakeryModel.FK__Employee__Person__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="BakeryModel.FK__Sale__EmployeeKe__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="BakeryModel.FK__Sale__CustomerKe__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="BakeryModel.FK__SaleDetai__Produ__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="BakeryModel.FK__SaleDetai__SaleK__1CF15040" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

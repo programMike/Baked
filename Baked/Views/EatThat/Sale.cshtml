@@ -1,0 +1,9 @@
+﻿@*ITC172 Final Project requirement:
+    There should also be a page that basically returns a receipt after the sale.*@
+@{
+    ViewBag.Title = "Baked @ Sale";
+}
+@model Baked.Models.Message
+
+<h2>Product Sale Cost:</h2>
+<h3>$@Html.DisplayTextFor(model => model.MessageText)</h3>

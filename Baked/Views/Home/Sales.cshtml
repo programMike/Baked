@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Baked.Models.SaleDetail>
+@{
+    ViewBag.Title = "Baked @ Sales";
+}
+
+<h2>Sales</h2>
+<h2>@ViewBag.Message</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SaleDetailPriceCharged)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SaleDetailQuantity)
+        </th>
+    </tr>
+
+    @foreach (var currentDataObj in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => currentDataObj.SaleDetailPriceCharged)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => currentDataObj.SaleDetailQuantity)
+            </td>
+        </tr>
+    }
+</table>
+
