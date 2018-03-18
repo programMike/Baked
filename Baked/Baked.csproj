@@ -151,6 +151,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AddPersonController.cs" />
+    <Compile Include="Controllers\AddProductController.cs" />
     <Compile Include="Controllers\EatThatController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -249,6 +250,8 @@
     <Content Include="Views\EatThat\Index.cshtml" />
     <Content Include="Views\EatThat\Sale.cshtml" />
     <Content Include="Views\Home\Sales.cshtml" />
+    <Content Include="Views\AddProduct\Index.cshtml" />
+    <Content Include="Views\AddProduct\Verification.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
